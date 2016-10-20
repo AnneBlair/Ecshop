@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B28D6C1B3671751392E23E1B /* Pods_Ecshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFC700E07B1BE8941BD8F4E /* Pods_Ecshop.framework */; };
+		D3AD4E9C1DB76C9500263B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD4E9B1DB76C9500263B52 /* AppDelegate.swift */; };
+		D3AD4EA31DB76C9500263B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3AD4EA21DB76C9500263B52 /* Assets.xcassets */; };
+		D3AD4EB11DB76C9500263B52 /* EcshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD4EB01DB76C9500263B52 /* EcshopTests.swift */; };
+		D3AD4EC81DB85DE700263B52 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD4EC61DB85DE700263B52 /* homeViewController.swift */; };
+		D3AD4EC91DB85DE700263B52 /* homeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3AD4EC71DB85DE700263B52 /* homeViewController.xib */; };
+		D3AD4ECC1DB85DF500263B52 /* lifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD4ECA1DB85DF500263B52 /* lifeViewController.swift */; };
+		D3AD4ECD1DB85DF500263B52 /* lifeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3AD4ECB1DB85DF500263B52 /* lifeViewController.xib */; };
+		D3AD4ED01DB85E0000263B52 /* IMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD4ECE1DB85E0000263B52 /* IMViewController.swift */; };
+		D3AD4ED11DB85E0000263B52 /* IMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3AD4ECF1DB85E0000263B52 /* IMViewController.xib */; };
+		D3AD4ED41DB85E0F00263B52 /* shoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD4ED21DB85E0F00263B52 /* shoppingViewController.swift */; };
+		D3AD4ED51DB85E0F00263B52 /* shoppingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3AD4ED31DB85E0F00263B52 /* shoppingViewController.xib */; };
+		D3AD4ED81DB85E1F00263B52 /* personalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD4ED61DB85E1F00263B52 /* personalViewController.swift */; };
+		D3AD4ED91DB85E1F00263B52 /* personalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3AD4ED71DB85E1F00263B52 /* personalViewController.xib */; };
+		D3AD4EDD1DB860E400263B52 /* customViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD4EDB1DB860E400263B52 /* customViewController.swift */; };
+		D3AD4EDE1DB860E400263B52 /* customViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3AD4EDC1DB860E400263B52 /* customViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3AD4EAD1DB76C9500263B52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3AD4E901DB76C9400263B52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3AD4E971DB76C9400263B52;
+			remoteInfo = Ecshop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26A5B010E234AC7982B3C19D /* Pods-Ecshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ecshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ecshop/Pods-Ecshop.release.xcconfig"; sourceTree = "<group>"; };
+		7AFC700E07B1BE8941BD8F4E /* Pods_Ecshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ecshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4C9F09B9F795699EC493D1C /* Pods-Ecshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ecshop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ecshop/Pods-Ecshop.debug.xcconfig"; sourceTree = "<group>"; };
+		D3AD4E981DB76C9500263B52 /* Ecshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3AD4E9B1DB76C9500263B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3AD4EA21DB76C9500263B52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3AD4EA71DB76C9500263B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3AD4EAC1DB76C9500263B52 /* EcshopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcshopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3AD4EB01DB76C9500263B52 /* EcshopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcshopTests.swift; sourceTree = "<group>"; };
+		D3AD4EB21DB76C9500263B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3AD4EC61DB85DE700263B52 /* homeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		D3AD4EC71DB85DE700263B52 /* homeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = homeViewController.xib; sourceTree = "<group>"; };
+		D3AD4ECA1DB85DF500263B52 /* lifeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lifeViewController.swift; sourceTree = "<group>"; };
+		D3AD4ECB1DB85DF500263B52 /* lifeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = lifeViewController.xib; sourceTree = "<group>"; };
+		D3AD4ECE1DB85E0000263B52 /* IMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMViewController.swift; sourceTree = "<group>"; };
+		D3AD4ECF1DB85E0000263B52 /* IMViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMViewController.xib; sourceTree = "<group>"; };
+		D3AD4ED21DB85E0F00263B52 /* shoppingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shoppingViewController.swift; sourceTree = "<group>"; };
+		D3AD4ED31DB85E0F00263B52 /* shoppingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = shoppingViewController.xib; sourceTree = "<group>"; };
+		D3AD4ED61DB85E1F00263B52 /* personalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = personalViewController.swift; sourceTree = "<group>"; };
+		D3AD4ED71DB85E1F00263B52 /* personalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = personalViewController.xib; sourceTree = "<group>"; };
+		D3AD4EDB1DB860E400263B52 /* customViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customViewController.swift; sourceTree = "<group>"; };
+		D3AD4EDC1DB860E400263B52 /* customViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3AD4E951DB76C9400263B52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B28D6C1B3671751392E23E1B /* Pods_Ecshop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3AD4EA91DB76C9500263B52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		426ECCF5FC63DF72EDDFE630 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AFC700E07B1BE8941BD8F4E /* Pods_Ecshop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74510A354A819ED2F661E741 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4C9F09B9F795699EC493D1C /* Pods-Ecshop.debug.xcconfig */,
+				26A5B010E234AC7982B3C19D /* Pods-Ecshop.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D3AD4E8F1DB76C9400263B52 = {
+			isa = PBXGroup;
+			children = (
+				D3AD4E9A1DB76C9500263B52 /* Ecshop */,
+				D3AD4EAF1DB76C9500263B52 /* EcshopTests */,
+				D3AD4E991DB76C9500263B52 /* Products */,
+				74510A354A819ED2F661E741 /* Pods */,
+				426ECCF5FC63DF72EDDFE630 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D3AD4E991DB76C9500263B52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3AD4E981DB76C9500263B52 /* Ecshop.app */,
+				D3AD4EAC1DB76C9500263B52 /* EcshopTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3AD4E9A1DB76C9500263B52 /* Ecshop */ = {
+			isa = PBXGroup;
+			children = (
+				D3AD4EC01DB85C0500263B52 /* Main */,
+				D3AD4EBF1DB85BF800263B52 /* Category */,
+				D3AD4EBE1DB85BE800263B52 /* Other */,
+				D3AD4EBB1DB85BDB00263B52 /* Mode */,
+				D3AD4EBC1DB85BDB00263B52 /* Controller */,
+				D3AD4EBD1DB85BDB00263B52 /* View */,
+				D3AD4E9B1DB76C9500263B52 /* AppDelegate.swift */,
+				D3AD4EA21DB76C9500263B52 /* Assets.xcassets */,
+				D3AD4EA71DB76C9500263B52 /* Info.plist */,
+			);
+			path = Ecshop;
+			sourceTree = "<group>";
+		};
+		D3AD4EAF1DB76C9500263B52 /* EcshopTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3AD4EB01DB76C9500263B52 /* EcshopTests.swift */,
+				D3AD4EB21DB76C9500263B52 /* Info.plist */,
+			);
+			path = EcshopTests;
+			sourceTree = "<group>";
+		};
+		D3AD4EBB1DB85BDB00263B52 /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mode;
+			sourceTree = "<group>";
+		};
+		D3AD4EBC1DB85BDB00263B52 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D3AD4EDA1DB8609300263B52 /* custom */,
+				D3AD4EC11DB85DC700263B52 /* personal */,
+				D3AD4EC21DB85DC700263B52 /* shopping */,
+				D3AD4EC31DB85DC700263B52 /* Im */,
+				D3AD4EC41DB85DC700263B52 /* life */,
+				D3AD4EC51DB85DC700263B52 /* home */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D3AD4EBD1DB85BDB00263B52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D3AD4EBE1DB85BE800263B52 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		D3AD4EBF1DB85BF800263B52 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		D3AD4EC01DB85C0500263B52 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D3AD4EC11DB85DC700263B52 /* personal */ = {
+			isa = PBXGroup;
+			children = (
+				D3AD4ED61DB85E1F00263B52 /* personalViewController.swift */,
+				D3AD4ED71DB85E1F00263B52 /* personalViewController.xib */,
+			);
+			path = personal;
+			sourceTree = "<group>";
+		};
+		D3AD4EC21DB85DC700263B52 /* shopping */ = {
+			isa = PBXGroup;
+			children = (
+				D3AD4ED21DB85E0F00263B52 /* shoppingViewController.swift */,
+				D3AD4ED31DB85E0F00263B52 /* shoppingViewController.xib */,
+			);
+			path = shopping;
+			sourceTree = "<group>";
+		};
+		D3AD4EC31DB85DC700263B52 /* Im */ = {
+			isa = PBXGroup;
+			children = (
+				D3AD4ECE1DB85E0000263B52 /* IMViewController.swift */,
+				D3AD4ECF1DB85E0000263B52 /* IMViewController.xib */,
+			);
+			path = Im;
+			sourceTree = "<group>";
+		};
+		D3AD4EC41DB85DC700263B52 /* life */ = {
+			isa = PBXGroup;
+			children = (
+				D3AD4ECA1DB85DF500263B52 /* lifeViewController.swift */,
+				D3AD4ECB1DB85DF500263B52 /* lifeViewController.xib */,
+			);
+			path = life;
+			sourceTree = "<group>";
+		};
+		D3AD4EC51DB85DC700263B52 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				D3AD4EC61DB85DE700263B52 /* homeViewController.swift */,
+				D3AD4EC71DB85DE700263B52 /* homeViewController.xib */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		D3AD4EDA1DB8609300263B52 /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				D3AD4EDB1DB860E400263B52 /* customViewController.swift */,
+				D3AD4EDC1DB860E400263B52 /* customViewController.xib */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3AD4E971DB76C9400263B52 /* Ecshop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3AD4EB51DB76C9500263B52 /* Build configuration list for PBXNativeTarget "Ecshop" */;
+			buildPhases = (
+				9071A300388461640AE6BDE6 /* [CP] Check Pods Manifest.lock */,
+				D3AD4E941DB76C9400263B52 /* Sources */,
+				D3AD4E951DB76C9400263B52 /* Frameworks */,
+				D3AD4E961DB76C9400263B52 /* Resources */,
+				4332380213EE3E9328D3853D /* [CP] Embed Pods Frameworks */,
+				BA3B1FFA92611E2C05CBF10F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ecshop;
+			productName = Ecshop;
+			productReference = D3AD4E981DB76C9500263B52 /* Ecshop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3AD4EAB1DB76C9500263B52 /* EcshopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3AD4EB81DB76C9500263B52 /* Build configuration list for PBXNativeTarget "EcshopTests" */;
+			buildPhases = (
+				D3AD4EA81DB76C9500263B52 /* Sources */,
+				D3AD4EA91DB76C9500263B52 /* Frameworks */,
+				D3AD4EAA1DB76C9500263B52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3AD4EAE1DB76C9500263B52 /* PBXTargetDependency */,
+			);
+			name = EcshopTests;
+			productName = EcshopTests;
+			productReference = D3AD4EAC1DB76C9500263B52 /* EcshopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3AD4E901DB76C9400263B52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "区块国际－yin";
+				TargetAttributes = {
+					D3AD4E971DB76C9400263B52 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Z84R6B8JVQ;
+						ProvisioningStyle = Automatic;
+					};
+					D3AD4EAB1DB76C9500263B52 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Z84R6B8JVQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D3AD4E971DB76C9400263B52;
+					};
+				};
+			};
+			buildConfigurationList = D3AD4E931DB76C9400263B52 /* Build configuration list for PBXProject "Ecshop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3AD4E8F1DB76C9400263B52;
+			productRefGroup = D3AD4E991DB76C9500263B52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3AD4E971DB76C9400263B52 /* Ecshop */,
+				D3AD4EAB1DB76C9500263B52 /* EcshopTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3AD4E961DB76C9400263B52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3AD4ED51DB85E0F00263B52 /* shoppingViewController.xib in Resources */,
+				D3AD4EA31DB76C9500263B52 /* Assets.xcassets in Resources */,
+				D3AD4EDE1DB860E400263B52 /* customViewController.xib in Resources */,
+				D3AD4ED91DB85E1F00263B52 /* personalViewController.xib in Resources */,
+				D3AD4EC91DB85DE700263B52 /* homeViewController.xib in Resources */,
+				D3AD4ED11DB85E0000263B52 /* IMViewController.xib in Resources */,
+				D3AD4ECD1DB85DF500263B52 /* lifeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3AD4EAA1DB76C9500263B52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4332380213EE3E9328D3853D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ecshop/Pods-Ecshop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9071A300388461640AE6BDE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA3B1FFA92611E2C05CBF10F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ecshop/Pods-Ecshop-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3AD4E941DB76C9400263B52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3AD4EDD1DB860E400263B52 /* customViewController.swift in Sources */,
+				D3AD4E9C1DB76C9500263B52 /* AppDelegate.swift in Sources */,
+				D3AD4ECC1DB85DF500263B52 /* lifeViewController.swift in Sources */,
+				D3AD4ED81DB85E1F00263B52 /* personalViewController.swift in Sources */,
+				D3AD4ED41DB85E0F00263B52 /* shoppingViewController.swift in Sources */,
+				D3AD4ED01DB85E0000263B52 /* IMViewController.swift in Sources */,
+				D3AD4EC81DB85DE700263B52 /* homeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3AD4EA81DB76C9500263B52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3AD4EB11DB76C9500263B52 /* EcshopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3AD4EAE1DB76C9500263B52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3AD4E971DB76C9400263B52 /* Ecshop */;
+			targetProxy = D3AD4EAD1DB76C9500263B52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D3AD4EB31DB76C9500263B52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3AD4EB41DB76C9500263B52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3AD4EB61DB76C9500263B52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4C9F09B9F795699EC493D1C /* Pods-Ecshop.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z84R6B8JVQ;
+				INFOPLIST_FILE = Ecshop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qukuaiguoji.Ecshop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D3AD4EB71DB76C9500263B52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26A5B010E234AC7982B3C19D /* Pods-Ecshop.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z84R6B8JVQ;
+				INFOPLIST_FILE = Ecshop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qukuaiguoji.Ecshop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D3AD4EB91DB76C9500263B52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z84R6B8JVQ;
+				INFOPLIST_FILE = EcshopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qukuaiguoji.EcshopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ecshop.app/Ecshop";
+			};
+			name = Debug;
+		};
+		D3AD4EBA1DB76C9500263B52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z84R6B8JVQ;
+				INFOPLIST_FILE = EcshopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qukuaiguoji.EcshopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ecshop.app/Ecshop";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3AD4E931DB76C9400263B52 /* Build configuration list for PBXProject "Ecshop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3AD4EB31DB76C9500263B52 /* Debug */,
+				D3AD4EB41DB76C9500263B52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3AD4EB51DB76C9500263B52 /* Build configuration list for PBXNativeTarget "Ecshop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3AD4EB61DB76C9500263B52 /* Debug */,
+				D3AD4EB71DB76C9500263B52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3AD4EB81DB76C9500263B52 /* Build configuration list for PBXNativeTarget "EcshopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3AD4EB91DB76C9500263B52 /* Debug */,
+				D3AD4EBA1DB76C9500263B52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3AD4E901DB76C9400263B52 /* Project object */;
+}
