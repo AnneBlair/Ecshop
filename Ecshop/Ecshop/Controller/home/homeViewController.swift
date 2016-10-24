@@ -12,7 +12,7 @@ class homeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        printLogDebug("width:\(UIScreen.main.bounds.width)height:\(UIScreen.main.bounds.height)")
         // Do any additional setup after loading the view.
     }
 

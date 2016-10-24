@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B28D6C1B3671751392E23E1B /* Pods_Ecshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFC700E07B1BE8941BD8F4E /* Pods_Ecshop.framework */; };
+		D30D41E91DBDAC0100E887CC /* YYGcategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30D41E81DBDAC0100E887CC /* YYGcategory.swift */; };
+		D30D41F51DBDB8E100E887CC /* YYGLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30D41F41DBDB8E100E887CC /* YYGLayout.swift */; };
 		D3AD4E9C1DB76C9500263B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD4E9B1DB76C9500263B52 /* AppDelegate.swift */; };
 		D3AD4EA31DB76C9500263B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3AD4EA21DB76C9500263B52 /* Assets.xcassets */; };
 		D3AD4EB11DB76C9500263B52 /* EcshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD4EB01DB76C9500263B52 /* EcshopTests.swift */; };
@@ -39,6 +41,8 @@
 		26A5B010E234AC7982B3C19D /* Pods-Ecshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ecshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ecshop/Pods-Ecshop.release.xcconfig"; sourceTree = "<group>"; };
 		7AFC700E07B1BE8941BD8F4E /* Pods_Ecshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ecshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C9F09B9F795699EC493D1C /* Pods-Ecshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ecshop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ecshop/Pods-Ecshop.debug.xcconfig"; sourceTree = "<group>"; };
+		D30D41E81DBDAC0100E887CC /* YYGcategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGcategory.swift; sourceTree = "<group>"; };
+		D30D41F41DBDB8E100E887CC /* YYGLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGLayout.swift; sourceTree = "<group>"; };
 		D3AD4E981DB76C9500263B52 /* Ecshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3AD4E9B1DB76C9500263B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3AD4EA21DB76C9500263B52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +100,77 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D30D41EA1DBDB89800E887CC /* personal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = personal;
+			sourceTree = "<group>";
+		};
+		D30D41EB1DBDB89800E887CC /* shopping */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = shopping;
+			sourceTree = "<group>";
+		};
+		D30D41EC1DBDB89800E887CC /* Im */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Im;
+			sourceTree = "<group>";
+		};
+		D30D41ED1DBDB89800E887CC /* life */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = life;
+			sourceTree = "<group>";
+		};
+		D30D41EE1DBDB89800E887CC /* home */ = {
+			isa = PBXGroup;
+			children = (
+				D30D41F41DBDB8E100E887CC /* YYGLayout.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		D30D41EF1DBDB8A600E887CC /* home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		D30D41F01DBDB8A600E887CC /* Im */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Im;
+			sourceTree = "<group>";
+		};
+		D30D41F11DBDB8A600E887CC /* life */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = life;
+			sourceTree = "<group>";
+		};
+		D30D41F21DBDB8A600E887CC /* personal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = personal;
+			sourceTree = "<group>";
+		};
+		D30D41F31DBDB8A600E887CC /* shopping */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = shopping;
+			sourceTree = "<group>";
+		};
 		D3AD4E8F1DB76C9400263B52 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +219,11 @@
 		D3AD4EBB1DB85BDB00263B52 /* Mode */ = {
 			isa = PBXGroup;
 			children = (
+				D30D41EF1DBDB8A600E887CC /* home */,
+				D30D41F01DBDB8A600E887CC /* Im */,
+				D30D41F11DBDB8A600E887CC /* life */,
+				D30D41F21DBDB8A600E887CC /* personal */,
+				D30D41F31DBDB8A600E887CC /* shopping */,
 			);
 			path = Mode;
 			sourceTree = "<group>";
@@ -164,6 +244,11 @@
 		D3AD4EBD1DB85BDB00263B52 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D30D41EA1DBDB89800E887CC /* personal */,
+				D30D41EB1DBDB89800E887CC /* shopping */,
+				D30D41EC1DBDB89800E887CC /* Im */,
+				D30D41ED1DBDB89800E887CC /* life */,
+				D30D41EE1DBDB89800E887CC /* home */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,6 +263,7 @@
 		D3AD4EBF1DB85BF800263B52 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				D30D41E81DBDAC0100E887CC /* YYGcategory.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -403,9 +489,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D30D41F51DBDB8E100E887CC /* YYGLayout.swift in Sources */,
 				D3AD4EDD1DB860E400263B52 /* customViewController.swift in Sources */,
 				D3AD4E9C1DB76C9500263B52 /* AppDelegate.swift in Sources */,
 				D3AD4ECC1DB85DF500263B52 /* lifeViewController.swift in Sources */,
+				D30D41E91DBDAC0100E887CC /* YYGcategory.swift in Sources */,
 				D3AD4ED81DB85E1F00263B52 /* personalViewController.swift in Sources */,
 				D3AD4ED41DB85E0F00263B52 /* shoppingViewController.swift in Sources */,
 				D3AD4ED01DB85E0000263B52 /* IMViewController.swift in Sources */,
