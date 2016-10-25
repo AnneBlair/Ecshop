@@ -8,12 +8,24 @@
 
 import UIKit
 
-class homeViewController: UIViewController {
+class homeViewController: UIViewController ,settingLayout {
 
+//    @objc func settingLayout(layout: YYGLayout, heigtWithWidth: Int, indexPath: NSIndexPath) -> CGFloat {
+//        
+//    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        printLogDebug("width:\(UIScreen.main.bounds.width)height:\(UIScreen.main.bounds.height)")
-        // Do any additional setup after loading the view.
+        let layout = YYGLayout()
+        layout.delegate = self
+        
+        
+        
+        
+        
+        
+
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +34,6 @@ class homeViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

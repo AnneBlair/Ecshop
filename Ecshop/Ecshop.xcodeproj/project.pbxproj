@@ -10,6 +10,10 @@
 		B28D6C1B3671751392E23E1B /* Pods_Ecshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFC700E07B1BE8941BD8F4E /* Pods_Ecshop.framework */; };
 		D30D41E91DBDAC0100E887CC /* YYGcategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30D41E81DBDAC0100E887CC /* YYGcategory.swift */; };
 		D30D41F51DBDB8E100E887CC /* YYGLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30D41F41DBDB8E100E887CC /* YYGLayout.swift */; };
+		D30D41F81DBF714300E887CC /* YYGCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30D41F61DBF714300E887CC /* YYGCollectionViewCell.swift */; };
+		D30D41F91DBF714300E887CC /* YYGCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D30D41F71DBF714300E887CC /* YYGCollectionViewCell.xib */; };
+		D30D41FB1DBF7C9C00E887CC /* water.plist in Resources */ = {isa = PBXBuildFile; fileRef = D30D41FA1DBF7C9C00E887CC /* water.plist */; };
+		D30D41FD1DBF7CBC00E887CC /* YYGhomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30D41FC1DBF7CBC00E887CC /* YYGhomeModel.swift */; };
 		D3AD4E9C1DB76C9500263B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD4E9B1DB76C9500263B52 /* AppDelegate.swift */; };
 		D3AD4EA31DB76C9500263B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3AD4EA21DB76C9500263B52 /* Assets.xcassets */; };
 		D3AD4EB11DB76C9500263B52 /* EcshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AD4EB01DB76C9500263B52 /* EcshopTests.swift */; };
@@ -43,6 +47,10 @@
 		A4C9F09B9F795699EC493D1C /* Pods-Ecshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ecshop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ecshop/Pods-Ecshop.debug.xcconfig"; sourceTree = "<group>"; };
 		D30D41E81DBDAC0100E887CC /* YYGcategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGcategory.swift; sourceTree = "<group>"; };
 		D30D41F41DBDB8E100E887CC /* YYGLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGLayout.swift; sourceTree = "<group>"; };
+		D30D41F61DBF714300E887CC /* YYGCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGCollectionViewCell.swift; sourceTree = "<group>"; };
+		D30D41F71DBF714300E887CC /* YYGCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYGCollectionViewCell.xib; sourceTree = "<group>"; };
+		D30D41FA1DBF7C9C00E887CC /* water.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = water.plist; sourceTree = "<group>"; };
+		D30D41FC1DBF7CBC00E887CC /* YYGhomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGhomeModel.swift; sourceTree = "<group>"; };
 		D3AD4E981DB76C9500263B52 /* Ecshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3AD4E9B1DB76C9500263B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3AD4EA21DB76C9500263B52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				D30D41F41DBDB8E100E887CC /* YYGLayout.swift */,
+				D30D41F61DBF714300E887CC /* YYGCollectionViewCell.swift */,
+				D30D41F71DBF714300E887CC /* YYGCollectionViewCell.xib */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -139,6 +149,7 @@
 		D30D41EF1DBDB8A600E887CC /* home */ = {
 			isa = PBXGroup;
 			children = (
+				D30D41FC1DBF7CBC00E887CC /* YYGhomeModel.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -203,6 +214,7 @@
 				D3AD4E9B1DB76C9500263B52 /* AppDelegate.swift */,
 				D3AD4EA21DB76C9500263B52 /* Assets.xcassets */,
 				D3AD4EA71DB76C9500263B52 /* Info.plist */,
+				D30D41FA1DBF7C9C00E887CC /* water.plist */,
 			);
 			path = Ecshop;
 			sourceTree = "<group>";
@@ -418,7 +430,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3AD4ED51DB85E0F00263B52 /* shoppingViewController.xib in Resources */,
+				D30D41FB1DBF7C9C00E887CC /* water.plist in Resources */,
 				D3AD4EA31DB76C9500263B52 /* Assets.xcassets in Resources */,
+				D30D41F91DBF714300E887CC /* YYGCollectionViewCell.xib in Resources */,
 				D3AD4EDE1DB860E400263B52 /* customViewController.xib in Resources */,
 				D3AD4ED91DB85E1F00263B52 /* personalViewController.xib in Resources */,
 				D3AD4EC91DB85DE700263B52 /* homeViewController.xib in Resources */,
@@ -495,6 +509,8 @@
 				D3AD4ECC1DB85DF500263B52 /* lifeViewController.swift in Sources */,
 				D30D41E91DBDAC0100E887CC /* YYGcategory.swift in Sources */,
 				D3AD4ED81DB85E1F00263B52 /* personalViewController.swift in Sources */,
+				D30D41FD1DBF7CBC00E887CC /* YYGhomeModel.swift in Sources */,
+				D30D41F81DBF714300E887CC /* YYGCollectionViewCell.swift in Sources */,
 				D3AD4ED41DB85E0F00263B52 /* shoppingViewController.swift in Sources */,
 				D3AD4ED01DB85E0000263B52 /* IMViewController.swift in Sources */,
 				D3AD4EC81DB85DE700263B52 /* homeViewController.swift in Sources */,

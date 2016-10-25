@@ -9,12 +9,14 @@
 import UIKit
 
 /// 设置代理
-@objc protocol RequestHandler {
+@objc protocol settingLayout {
     @objc optional func settingLayout(layout: YYGLayout ,heigtWithWidth: Int,indexPath:NSIndexPath ) -> CGFloat
 }
 
 class YYGLayout: UICollectionViewLayout {
     
+    ///代理
+    weak var delegate: settingLayout!;
     /// 列的个数
     let columns: Int = 2
     /// 列与列之间的距离
@@ -22,9 +24,9 @@ class YYGLayout: UICollectionViewLayout {
     /// 行与行直接的距离
     let rowSpace: Int = 5
     /// 存放每一类的最大y坐标
-    var maxYDict: NSMutableDictionary?
+    var maxYDict: NSMutableDictionary = [:]
     /// 存放没列的宽度
-    var cellWith: Int?
+    var cellWidth: Int?
     
     
     /**
@@ -32,7 +34,7 @@ class YYGLayout: UICollectionViewLayout {
      */
     override func prepare() {
         let collectionViewWidth: Int = Int((self.collectionView?.bounds.size.width)!) - (columns - 1) * columnsSpace
-        cellWith = collectionViewWidth/columns
+        cellWidth = collectionViewWidth/columns
     }
     
     /**
@@ -40,7 +42,7 @@ class YYGLayout: UICollectionViewLayout {
      */
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         for i in 0..<columns {
-            maxYDict?[i] = 0
+            maxYDict[i] = 0
         }
         var arr: [UICollectionViewLayoutAttributes]?
         let num: NSInteger = (self.collectionView?.numberOfItems(inSection: 0))!
@@ -56,12 +58,42 @@ class YYGLayout: UICollectionViewLayout {
     /**
      *  计算某一个cell的frame
      */
-//    override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-//        
-//    }
+    override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        var minYColumn: Int = 0
+        maxYDict.enumerateKeysAndObjects({ (columnIndex: Int, maxY:  Int,stop: UnsafeMutablePointer<ObjCBool>  ) in
+            if (self.maxYDict[minYColumn] as! Float) > (self.maxYDict[columnIndex] as! Float){
+                minYColumn = columnIndex
+            }
+            
+        } as! (Any, Any, UnsafeMutablePointer<ObjCBool>) -> Void)
+        
+        let cellY: CGFloat = maxYDict[minYColumn] as! CGFloat
+        let cellX: Int = cellWidth! + columnsSpace
+        
+        
+        let cellH: CGFloat = (delegate?.settingLayout?(layout: self, heigtWithWidth: cellWidth!, indexPath: indexPath as NSIndexPath))!
+        maxYDict[minYColumn] = Int(cellY) + rowSpace + Int(cellH)
+        let attribute: UICollectionViewLayoutAttributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
+        attribute.frame = CGRect.init(x: CGFloat(cellX), y: cellY, width: CGFloat(cellWidth!), height: cellH)
+        return attribute
+        
+    }
     
-    
-    
-    
-    
+    /**
+     *  得到布局好后，collectionview实际的大小
+     */
+   
+    override var collectionViewContentSize: CGSize {
+        var minYColumn = 0
+       
+        maxYDict.enumerateKeysAndObjects ({ (columnIndex: Int, maxY: Int, stop: UnsafeMutablePointer<ObjCBool>) in
+            if (self.maxYDict[minYColumn] as! Float) < (self.maxYDict[columnIndex] as! Float) {
+                minYColumn = columnIndex
+            }
+            
+        } as! (Any, Any, UnsafeMutablePointer<ObjCBool>) -> Void)
+        
+        return CGSize.init(width: (collectionView?.bounds.size.width)!, height: maxYDict[minYColumn] as! CGFloat)
+    }
+
 }
