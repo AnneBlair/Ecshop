@@ -60,12 +60,11 @@ class YYGLayout: UICollectionViewLayout {
      */
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         var minYColumn: Int = 0
-        maxYDict.enumerateKeysAndObjects({ (columnIndex: Int, maxY:  Int,stop: UnsafeMutablePointer<ObjCBool>  ) in
+        maxYDict.enumerateKeysAndObjects({ (columnIndex, maxY,stop ) -> Void in
             if (self.maxYDict[minYColumn] as! Float) > (self.maxYDict[columnIndex] as! Float){
-                minYColumn = columnIndex
+                minYColumn = columnIndex as! Int
             }
-            
-        } as! (Any, Any, UnsafeMutablePointer<ObjCBool>) -> Void)
+        })
         
         let cellY: CGFloat = maxYDict[minYColumn] as! CGFloat
         let cellX: Int = cellWidth! + columnsSpace
@@ -82,18 +81,26 @@ class YYGLayout: UICollectionViewLayout {
     /**
      *  得到布局好后，collectionview实际的大小
      */
-   
     override var collectionViewContentSize: CGSize {
-        var minYColumn = 0
-       
-        maxYDict.enumerateKeysAndObjects ({ (columnIndex: Int, maxY: Int, stop: UnsafeMutablePointer<ObjCBool>) in
-            if (self.maxYDict[minYColumn] as! Float) < (self.maxYDict[columnIndex] as! Float) {
-                minYColumn = columnIndex
+        var minYColumn: Int = 0
+        maxYDict.enumerateKeysAndObjects ({ (columnIndex, maxY, stop) -> Void in
+            if maxYDict[minYColumn] as! CGFloat > maxYDict[columnIndex as! Int] as! CGFloat  {
+                minYColumn = columnIndex as! Int
+                stop.pointee = true
             }
-            
-        } as! (Any, Any, UnsafeMutablePointer<ObjCBool>) -> Void)
+        })
         
-        return CGSize.init(width: (collectionView?.bounds.size.width)!, height: maxYDict[minYColumn] as! CGFloat)
+        printLogDebug(maxYDict)
+        printLogDebug(maxYDict[minYColumn])
+        var size: CGSize?
+        if maxYDict[minYColumn] != nil {
+            size = CGSize.init(width: (collectionView?.bounds.size.width)!, height:  maxYDict[minYColumn] as! CGFloat)
+        } else {
+            size = CGSize.init(width: (collectionView?.bounds.size.width)!, height: 0)
+        }
+        
+    
+        return size!
     }
 
 }

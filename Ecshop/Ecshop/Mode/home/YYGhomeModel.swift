@@ -14,19 +14,18 @@ class YYGhomeModel: NSObject {
     var image: String?
     var price: String?
     
-    required init(dict: NSDictionary) {
+    init(dict: NSDictionary) {
         w = (dict["w"] as! Int)
         h = (dict["h"] as! Int)
         image = (dict["img"] as! String)
         price = (dict["price"] as! String)
     }
     
-    func cellModel(withDict dict: NSDictionary) -> Self {
-        
-        let result = type(of: self).init(dict: dict)
-        
-        return result
-    }
+//    func cellModel(withDict dict: NSDictionary) -> Self {
+//        
+//        let result = type(of: self).init(dict: dict)
+//        return result
+//    }
     
 
     
