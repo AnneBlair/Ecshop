@@ -8,7 +8,7 @@
 
 import UIKit
 
-class homeViewController: UIViewController ,settingLayout ,UICollectionViewDelegate,UICollectionViewDataSource{
+class homeViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
 
     var dataSource: NSMutableArray?
     
@@ -16,15 +16,25 @@ class homeViewController: UIViewController ,settingLayout ,UICollectionViewDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         loadData()
+        
+        let layout:  UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize.init(width: 128, height: 128)
+        layout.sectionInset = UIEdgeInsetsMake(5, 5, 5, 5)
+        layout.scrollDirection = UICollectionViewScrollDirection.vertical
+        
+        let rect: CGRect = UIScreen.main.bounds
+        printLogDebug(rect)
+        printLogDebug(UIScreen.main.bounds)
+        let cvc: UICollectionView = UICollectionView(frame: rect, collectionViewLayout: layout)
+        
+        cvc.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "water")
+        cvc.delegate = self
+        cvc.dataSource = self
+        self.view.addSubview(cvc)
 
-        let layout = YYGLayout()
-        layout.delegate = self
-        let collectionView: UICollectionView = UICollectionView.init(frame: self.view.bounds, collectionViewLayout: layout)
-        collectionView.register(YYGCollectionViewCell.self, forCellWithReuseIdentifier: "water")
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        self.view.addSubview(collectionView)
+        
         
     }
 
@@ -44,29 +54,32 @@ class homeViewController: UIViewController ,settingLayout ,UICollectionViewDeleg
             dataSource?.add(model)
         }
     }
+//
+//    /// 代理行为
+//    ///
+//    /// - parameter layout:         YYGlayout
+//    /// - parameter heigtWithWidth: 实际cell的宽度
+//    /// - parameter indexPath:      具体cell的信息
+//    ///
+//    /// - returns: 返回处理后的实际高度
+//    @objc func settingLayout(layout: YYGLayout, heigtWithWidth: Int, indexPath: NSIndexPath) -> CGFloat {
+//        let model: YYGhomeModel = dataSource![indexPath.row] as! YYGhomeModel
+//        return CGFloat(heigtWithWidth) * CGFloat(model.h!) * 1.0 / CGFloat(model.w!)
+//    }
     
-    /// 代理行为
-    ///
-    /// - parameter layout:         YYGlayout
-    /// - parameter heigtWithWidth: 实际cell的宽度
-    /// - parameter indexPath:      具体cell的信息
-    ///
-    /// - returns: 返回处理后的实际高度
-    @objc func settingLayout(layout: YYGLayout, heigtWithWidth: Int, indexPath: NSIndexPath) -> CGFloat {
-        let model: YYGhomeModel = dataSource![indexPath.row] as! YYGhomeModel
-        return CGFloat(heigtWithWidth) * CGFloat(model.h!) * 1.0 / CGFloat(model.w!)
-    }
-    
-    ///collectionView delegate
+    //代理
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return (dataSource?.count)!
+        return 16
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: YYGCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "water", for: indexPath) as! YYGCollectionViewCell
-//        var model: YYGhomeModel = dataSource[indexPath.row]
-        cell.backgroundView?.backgroundColor = UIColor.red
+        let cell: UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "water", for: indexPath)
+        
+        cell.backgroundColor = UIColor.purple
         return cell
+        
     }
+
     
 
 }
