@@ -10,6 +10,11 @@ import UIKit
 
 class homeViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,settingLayout {
 
+    
+    @IBOutlet weak var headView: UIView!
+    @IBOutlet weak var layout: YYGLayout!
+    @IBOutlet weak var cvc: UICollectionView!
+    
     var dataSource: NSMutableArray?
     
     
@@ -17,20 +22,10 @@ class homeViewController: UIViewController,UICollectionViewDelegate,UICollection
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loadLayout()
         loadData()
-        
-        let layout: YYGLayout = YYGLayout()
         layout.delegate = self
-        
-        let rect: CGRect = UIScreen.main.bounds
-        let cvc: UICollectionView = UICollectionView(frame: rect, collectionViewLayout: layout)
         cvc.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "water")
-        cvc.backgroundColor = UIColor.gray
-        cvc.delegate = self
-        cvc.dataSource = self
-        
-        self.view.addSubview(cvc)
-
         
         
     }
@@ -51,6 +46,11 @@ class homeViewController: UIViewController,UICollectionViewDelegate,UICollection
             dataSource?.add(model)
         }
     }
+    
+    func loadLayout() {
+        self.title = "三界生活"
+        cvc.addSubview(headView)
+    }
 
     /// 代理行为
     ///
@@ -61,20 +61,35 @@ class homeViewController: UIViewController,UICollectionViewDelegate,UICollection
     /// - returns: 返回处理后的实际高度
     func settingLayout(layout: YYGLayout, heigtWithWidth: Int, indexPath: NSIndexPath) -> Int {
         let model: YYGhomeModel = dataSource![indexPath.row] as! YYGhomeModel
-        printLogDebug((heigtWithWidth * model.h! * 1 / model.w!))
         return (heigtWithWidth * model.h! * 1 / model.w!)
     }
     
-    //代理
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return (dataSource?.count)!
+        if section == 0 {
+            return 6
+        } else if section == 1 {
+            return 4
+        }
+        else {
+            return 24
+        }
+        
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "water", for: indexPath)
-        cell.backgroundColor = UIColor.red
+        cell.backgroundColor = UIColor.green
         return cell
     }
-  
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        printLogDebug("点了了\(indexPath.row)")
+    }
+    
+
 
     
 

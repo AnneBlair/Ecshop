@@ -22,7 +22,7 @@ class YYGhomeModel: NSObject {
     }
     
 //    func cellModel(withDict dict: NSDictionary) -> Self {
-//        
+//
 //        let result = type(of: self).init(dict: dict)
 //        return result
 //    }

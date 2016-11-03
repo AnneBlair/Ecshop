@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B28D6C1B3671751392E23E1B /* Pods_Ecshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFC700E07B1BE8941BD8F4E /* Pods_Ecshop.framework */; };
+		D30953811DCB6893008352EA /* YYGRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30953801DCB6893008352EA /* YYGRegular.swift */; };
 		D30D41E91DBDAC0100E887CC /* YYGcategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30D41E81DBDAC0100E887CC /* YYGcategory.swift */; };
 		D30D41F51DBDB8E100E887CC /* YYGLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30D41F41DBDB8E100E887CC /* YYGLayout.swift */; };
 		D30D41F81DBF714300E887CC /* YYGCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30D41F61DBF714300E887CC /* YYGCollectionViewCell.swift */; };
@@ -45,6 +46,7 @@
 		26A5B010E234AC7982B3C19D /* Pods-Ecshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ecshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ecshop/Pods-Ecshop.release.xcconfig"; sourceTree = "<group>"; };
 		7AFC700E07B1BE8941BD8F4E /* Pods_Ecshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ecshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C9F09B9F795699EC493D1C /* Pods-Ecshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ecshop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ecshop/Pods-Ecshop.debug.xcconfig"; sourceTree = "<group>"; };
+		D30953801DCB6893008352EA /* YYGRegular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGRegular.swift; sourceTree = "<group>"; };
 		D30D41E81DBDAC0100E887CC /* YYGcategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGcategory.swift; sourceTree = "<group>"; };
 		D30D41F41DBDB8E100E887CC /* YYGLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGLayout.swift; sourceTree = "<group>"; };
 		D30D41F61DBF714300E887CC /* YYGCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				D30D41E81DBDAC0100E887CC /* YYGcategory.swift */,
+				D30953801DCB6893008352EA /* YYGRegular.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 			files = (
 				D30D41F51DBDB8E100E887CC /* YYGLayout.swift in Sources */,
 				D3AD4EDD1DB860E400263B52 /* customViewController.swift in Sources */,
+				D30953811DCB6893008352EA /* YYGRegular.swift in Sources */,
 				D3AD4E9C1DB76C9500263B52 /* AppDelegate.swift in Sources */,
 				D3AD4ECC1DB85DF500263B52 /* lifeViewController.swift in Sources */,
 				D30D41E91DBDAC0100E887CC /* YYGcategory.swift in Sources */,
